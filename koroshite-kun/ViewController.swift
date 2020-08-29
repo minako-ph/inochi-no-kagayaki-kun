@@ -73,7 +73,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
         // 胴体の生成
         for doutai in doutaiList {
-            let doutai: KoroshiteKuGenerator = KoroshiteKuGenerator(frame: doutai);
+            let doutai: KoroshiteKunGenerator = KoroshiteKunGenerator(frame: doutai);
             doutai.color = UIColor(red: 247/255, green: 5/255, blue: 2/255, alpha: 1)
             doutai.isOpaque = false
             frame.addSubview(doutai)
@@ -81,7 +81,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
         // 白目の生成
         for shirome in shiromeList {
-            let shirome: KoroshiteKuGenerator = KoroshiteKuGenerator(frame: shirome);
+            let shirome: KoroshiteKunGenerator = KoroshiteKunGenerator(frame: shirome);
             shirome.color = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
             shirome.isOpaque = false
             frame.addSubview(shirome)
@@ -89,7 +89,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
         // 黒目の生成
         for kurome in kuromeList {
-            let kurome: KoroshiteKuGenerator = KoroshiteKuGenerator(frame: kurome);
+            let kurome: KoroshiteKunGenerator = KoroshiteKunGenerator(frame: kurome);
             kurome.color = UIColor(red: 15/255, green: 125/255, blue: 252/255, alpha: 1)
             kurome.isOpaque = false
             frame.addSubview(kurome)
@@ -119,7 +119,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 }
 // コロシテくんを生成するクラス
-class KoroshiteKuGenerator: UIView {
+class KoroshiteKunGenerator: UIView {
     var color: UIColor!
 
     override func draw(_ rect: CGRect) {
